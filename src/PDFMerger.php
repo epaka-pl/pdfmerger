@@ -1,8 +1,8 @@
 <?php
 
-namespace erc\pdfmerger;
+namespace epaka\pdfmerger;
 
-use erc\pdfmerger\fpdi\fpdi_with_annots;
+use epaka\pdfmerger\fpdi\fpdi_with_annots;
 
 /**
  * Based on PDFMerger created by Jarrod Nettles December 2009

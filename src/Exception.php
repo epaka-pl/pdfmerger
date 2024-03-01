@@ -1,6 +1,6 @@
 <?php
 
-namespace erc\pdfmerger;
+namespace epaka\pdfmerger;
 
 /**
  * Base exception

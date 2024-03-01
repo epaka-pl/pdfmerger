@@ -14,23 +14,22 @@ Note that your PDFs are merged in the order that you provide them using the addP
 
 If you put pages 12-14 before 1-5 then 12-15 will be placed first in the output.
 
-* Uses FPDI 1.4.4 from Setasign
-* Uses FPDF 1.6 by Olivier Plathey with FPDF_TPL extension 1.2.3 by Setasign
-* FPDI extension to preserve external hyperlinks https://gist.github.com/andreyvit/2020422
+- Uses FPDI 1.4.4 from Setasign
+- Uses FPDF 1.6 by Olivier Plathey with FPDF_TPL extension 1.2.3 by Setasign
+- FPDI extension to preserve external hyperlinks https://gist.github.com/andreyvit/2020422
 
 All of these packages are free and open source software, bundled with this class for ease of use.
 
-Installation
-------------
+## Installation
+
 Install using [composer](http://getcomposer.org/).
 
     composer require erc/pdfmerger
 
-Usage
------
+## Usage
 
 ```php
-use erc\pdfmerger\PDFMerger;
+use epaka\pdfmerger\PDFMerger;
 
 $pdf = new PDFMerger;
 try {
@@ -41,3 +40,4 @@ try {
 } catch(Exception $e){
   echo $e->getMessage();
 }
+```
