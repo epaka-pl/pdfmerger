@@ -256,9 +256,13 @@ class fpdi_pdf_parser extends pdf_parser {
           if ($stream === false) {
             $oStream = substr($oStream, 2);
             $stream = @gzinflate($oStream);
-            if ($stream == false) {
-              $this->error('Error while decompressing stream.');
-            }
+          }
+          if ($stream === false) {
+            $oStream = substr($oStream, 3);
+            $stream = @gzinflate($oStream);
+          }
+          if ($stream == false) {
+            $this->error('Error while decompressing stream.');
           }
         break;
         case '/LZWDecode':
