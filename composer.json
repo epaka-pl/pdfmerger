@@ -1,8 +1,8 @@
 {
-    "name": "erc/pdfmerger",
+    "name": "epaka/pdfmerger",
     "description": "Library for merging multiple PDFs",
     "keywords": ["pdf", "merge"],
-    "homepage": "https://github.com/everright/pdfmerger",
+    "homepage": "https://github.com/epaka-pl/pdfmerger",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "erc\\pdfmerger\\": "src/"
+            "epaka\\pdfmerger\\": "src/"
         }
     },
     "require": {
